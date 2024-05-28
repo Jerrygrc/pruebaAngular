@@ -2,7 +2,7 @@
     <app-city-form (ciudad)="addCiudad($event)"/>
         <ul>
             <ng-template ngFor let-ciudad [ngForOf]="ciudades">
-            <li>{{ciudad.nombreCiudad}}</li>
+            <li>{{ciudad.nombreCiudad}} - {{ciudad.anho}} - {{ciudad.pais}}</li>
             </ng-template>
         </ul>
       

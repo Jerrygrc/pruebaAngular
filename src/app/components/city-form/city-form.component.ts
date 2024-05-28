@@ -13,7 +13,7 @@ export class CityFormComponent {
   mForm = this.fb.group({
     nombreCiudad: ["", [Validators.required]],
     pais: ["", [Validators.required]],
-    año: ["", [Validators.required]]
+    anho: ["", [Validators.required]]
   })
 
   @Output() ciudades = new EventEmitter<any>();
