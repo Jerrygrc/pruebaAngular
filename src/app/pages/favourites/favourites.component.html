@@ -1,0 +1,10 @@
+<div class="mx-auto md:h-2/3 lg:w-1/3">
+    <app-city-form (ciudad)="addCiudad($event)"/>
+        <ul>
+            <ng-template ngFor let-ciudad [ngForOf]="ciudades">
+            <li>{{ciudad.nombreCiudad}}</li>
+            </ng-template>
+        </ul>
+      
+    <app-city-item/>
+</div>
