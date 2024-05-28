@@ -16,13 +16,15 @@ export class CityFormComponent {
     anho: ["", [Validators.required]]
   })
 
-  @Output() ciudades = new EventEmitter<any>();
+  @Output() ciudad = new EventEmitter<any>();
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) {
+    this.fb
+  }
 
   sendForm(){
     console.log(this.mForm.value)
-    this.ciudades.emit(this.mForm.value)
+    this.ciudad.emit(this.mForm.value)
 
   }
 }

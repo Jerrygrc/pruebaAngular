@@ -5,7 +5,7 @@ import { CityFormComponent } from './components/city-form/city-form.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CityFormComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

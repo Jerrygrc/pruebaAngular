@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-city-item',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './city-item.component.scss'
 })
 export class CityItemComponent {
+
+  @Input() ciudadInput: any; 
 
 }
